@@ -355,6 +355,7 @@ body.noscroll {
 }
 #main {
   margin-top: 80px;
+  overflow: hidden;
 }
 #main #fv {
   position: relative;
@@ -442,6 +443,10 @@ body.noscroll {
     bottom: 0;
     right: 50%;
     transform: translateX(50%);
+  }
+  #main #fv::after {
+    bottom: 40px;
+    left: 15px;
   }
 }
 #main #hello {
