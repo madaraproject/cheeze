@@ -48,7 +48,7 @@ img {display: block;}
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: url(/img/icon-blank.svg) center center no-repeat;
+    background: url(../img/icon-blank.svg) center center no-repeat;
     background-size: contain;
     transform: translateY(3px); //微調整
     margin-left: 20px;
@@ -70,7 +70,7 @@ img {display: block;}
         display: inline-block;
         width: 335px;
         height: 139px;
-        background: url(/img/blob-02.svg) center center no-repeat;
+        background: url(../img/blob-02.svg) center center no-repeat;
         background-size: contain;
         z-index: -1;
     }
@@ -136,7 +136,7 @@ img {display: block;}
         display: inline-block;
         width: 60px;
         height: 60px;
-        background: url(/img/recruit-icon.svg) center center no-repeat;
+        background: url(../img/recruit-icon.svg) center center no-repeat;
         background-size: contain;
         transform: translateY(3px); //微調整
         margin-right: 20px;
@@ -148,7 +148,7 @@ img {display: block;}
             display: inline-block;
             width: 60px;
             height: 60px;
-            background: url(/img/recruit-icon-hover.svg) center center no-repeat;
+            background: url(../img/recruit-icon-hover.svg) center center no-repeat;
             background-size: contain;
             transform: translateY(3px); //微調整
             margin-right: 20px;
@@ -161,7 +161,7 @@ img {display: block;}
             display: inline-block;
             width: 32px;
             height: 32px;
-            background: url(/img/noise.svg) center center no-repeat;
+            background: url(../img/noise.svg) center center no-repeat;
             background-size: contain;
             transform: translateY(3px); //微調整
             z-index: 1;
@@ -350,11 +350,11 @@ body {
                 display: inline-block;
                 width: 32px;
                 height: 32px;
-                background: url(/img/menu-close.svg) center center no-repeat;
+                background: url(../img/menu-close.svg) center center no-repeat;
                 background-size: contain;
             }
             &.closed::before {
-                background: url(/img/menu-open.svg) center center no-repeat;
+                background: url(../img/menu-open.svg) center center no-repeat;
             }
         }
     }
@@ -406,7 +406,7 @@ body {
                     width: 392px;
                     height: 377px;
                     display: inline-block;
-                    background: url(/img/blob-01.svg) center center no-repeat;
+                    background: url(../img/blob-01.svg) center center no-repeat;
                     background-size: contain;
                     z-index: -1;
                 } 
@@ -425,7 +425,7 @@ body {
             display: inline-block;
             width: 18px;
             height: 140px;
-            background: url(/img/scroll-message-pc.svg) center center no-repeat;
+            background: url(../img/scroll-message-pc.svg) center center no-repeat;
             background-size: contain;
         }
     }
