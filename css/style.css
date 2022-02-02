@@ -282,7 +282,7 @@ body.noscroll {
 @media (max-width: 1080px) {
   #header {
     position: absolute;
-    top: -80px;
+    top: 0;
     background-color: transparent;
     box-shadow: none;
   }
@@ -418,7 +418,7 @@ body.noscroll {
     width: 100%;
   }
   #main #fv .wrapper .fv-copy {
-    top: 100px;
+    top: 160px;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -572,5 +572,22 @@ body.noscroll {
   #main #recruit .wrapper .recruit-info .recruit-table tr:not(:nth-child(1)) th {
     border-top: none;
   }
+}
+
+@media (max-width: 1080px) {
+  #main {
+    margin-top: 0;
+  }
+}
+#footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#footer .footer-logo {
+  margin: 0 auto 40px auto;
+}
+#footer .copy-right {
+  text-align: center;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

@@ -296,7 +296,7 @@ body {
 @include tab {
     #header {
         position: absolute;
-        top: -80px;
+        top: 0;
         background-color: transparent;
         box-shadow: none;
         .header-title {
@@ -436,7 +436,7 @@ body {
             .wrapper {
                 width: 100%;
                 .fv-copy {
-                    top: 100px;
+                    top: 160px;
                     left: 50%;
                     transform: translate(-50%,0);
                     .fv-main-copy {
@@ -624,5 +624,21 @@ body {
                 }
             }
         }
+    }
+}
+@include tab {
+    #main {margin-top: 0;}
+}
+
+// footer
+#footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .footer-logo {
+        margin: 0 auto 40px auto;
+    }
+    .copy-right {
+        text-align: center;
+        line-height: 1.5;
     }
 }
