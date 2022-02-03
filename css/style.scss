@@ -349,6 +349,9 @@ body {
 }
 @include sp {
     #header {
+        position: fixed;
+        height: 80px;
+        background-color: rgba($c-white, 0.9);
         .header-title {
             left: 15px;
         }
