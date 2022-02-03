@@ -695,7 +695,9 @@ body {
         50% {left: 40px; bottom: 40px;}
         100% {left: 40px; bottom: 30px;}
     }
-    @include tab {
+}
+@include tab {
+    .arrow-animation {
         @keyframes arrow-amnimation{
             0% {left: 50%; bottom: 7px;}
             50% {left: 50%; bottom: 3px;}
