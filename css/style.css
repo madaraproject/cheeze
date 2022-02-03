@@ -627,23 +627,29 @@ body {
 }
 @-webkit-keyframes scroll-arrow {
   0% {
+    left: 0;
     bottom: 30px;
   }
   50% {
+    left: 0;
     bottom: 40px;
   }
   100% {
+    left: 0;
     bottom: 30px;
   }
 }
 @keyframes scroll-arrow {
   0% {
+    left: 0;
     bottom: 30px;
   }
   50% {
+    left: 0;
     bottom: 40px;
   }
   100% {
+    left: 0;
     bottom: 30px;
   }
 }
