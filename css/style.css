@@ -659,7 +659,6 @@ body {
     transform: translate(0, 0);
   }
 }
-
 @media (max-width: 1080px) {
   @-webkit-keyframes arrow-amnimation {
     0% {
@@ -696,6 +695,7 @@ body {
     }
   }
 }
+
 .member-animation {
   -webkit-animation-name: member-animation;
           animation-name: member-animation;
