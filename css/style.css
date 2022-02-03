@@ -608,6 +608,69 @@ body {
   line-height: 1.5;
 }
 
+#fv::after {
+  -webkit-animation-name: scroll-arrow;
+          animation-name: scroll-arrow;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes scroll-arrow {
+  0% {
+    bottom: 35px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 35px;
+  }
+}
+@keyframes scroll-arrow {
+  0% {
+    bottom: 35px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 35px;
+  }
+}
+@media (max-width: 1080px) {
+  @-webkit-keyframes scroll-arrow {
+    0% {
+      bottom: 8px;
+    }
+    50% {
+      bottom: 3px;
+    }
+    100% {
+      bottom: 8px;
+    }
+  }
+  @keyframes scroll-arrow {
+    0% {
+      bottom: 8px;
+    }
+    50% {
+      bottom: 3px;
+    }
+    100% {
+      bottom: 8px;
+    }
+  }
+}
+
 .member-animation {
   -webkit-animation-name: member-animation;
           animation-name: member-animation;
