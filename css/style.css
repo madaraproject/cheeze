@@ -191,10 +191,12 @@ body {
   position: relative;
   background-color: #ffffff;
 }
-body.noscroll {
-  overflow: hidden;
-}
 
+@media (max-width: 1080px) {
+  body.closed {
+    overflow: hidden;
+  }
+}
 #header {
   position: fixed;
   top: 0;

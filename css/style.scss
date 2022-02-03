@@ -203,8 +203,12 @@ body {
     line-height: 2;
     position: relative;
     background-color: $c-white;
-    &.noscroll {
-        overflow: hidden;
+}
+@include tab {
+    body {
+        &.closed {
+            overflow: hidden;
+        }
     }
 }
 
