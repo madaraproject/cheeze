@@ -690,15 +690,15 @@ body {
         animation-direction: normal;
     }
     @keyframes scroll-arrow {
-        0% {bottom: 35px;}
+        0% {bottom: 30px;}
         50% {bottom: 40px;}
-        100% {bottom: 35px;}
+        100% {bottom: 30px;}
     }
     @include tab {
         @keyframes scroll-arrow {
-            0% {bottom: 8px;}
+            0% {bottom: 7px;}
             50% {bottom: 3px;}
-            100% {bottom: 8px;}
+            100% {bottom: 7px;}
         }
     }
 }
