@@ -612,8 +612,8 @@ body {
 #fv::after {
   -webkit-animation-name: scroll-arrow;
           animation-name: scroll-arrow;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;

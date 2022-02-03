@@ -683,7 +683,7 @@ body {
 #fv {
     &::after {
         animation-name: scroll-arrow;
-        animation-fill-mode: backwards;
+        animation-fill-mode: none;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: ease;
