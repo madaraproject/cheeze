@@ -571,7 +571,6 @@ body.noscroll {
   width: 100%;
   height: 380px;
   border: 2px solid #1b1b1b;
-  background-color: #ffe200;
 }
 #main #company .company-content .company-info {
   width: 400px;
@@ -595,6 +594,7 @@ body.noscroll {
   }
 }
 #footer {
+  background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
 }
