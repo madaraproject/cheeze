@@ -609,9 +609,9 @@ body {
   line-height: 1.5;
 }
 
-#fv::after {
-  -webkit-animation-name: scroll-arrow;
-          animation-name: scroll-arrow;
+.arrow-amnimation::after {
+  -webkit-animation-name: arrow-amnimation;
+          animation-name: arrow-amnimation;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-duration: 1s;
@@ -625,73 +625,61 @@ body {
   -webkit-animation-direction: normal;
           animation-direction: normal;
 }
-@-webkit-keyframes scroll-arrow {
+@-webkit-keyframes arrow-amnimation {
   0% {
     left: 40px;
     bottom: 30px;
-    transform: translate(0, 0);
   }
   50% {
     left: 40px;
     bottom: 40px;
-    transform: translate(0, 0);
   }
   100% {
     left: 40px;
     bottom: 30px;
-    transform: translate(0, 0);
   }
 }
-@keyframes scroll-arrow {
+@keyframes arrow-amnimation {
   0% {
     left: 40px;
     bottom: 30px;
-    transform: translate(0, 0);
   }
   50% {
     left: 40px;
     bottom: 40px;
-    transform: translate(0, 0);
   }
   100% {
     left: 40px;
     bottom: 30px;
-    transform: translate(0, 0);
   }
 }
 @media (max-width: 1080px) {
-  @-webkit-keyframes scroll-arrow {
+  @-webkit-keyframes arrow-amnimation {
     0% {
       left: 50%;
       bottom: 7px;
-      transform: translate(-50%, 0);
     }
     50% {
       left: 50%;
       bottom: 3px;
-      transform: translate(-50%, 0);
     }
     100% {
       left: 50%;
       bottom: 7px;
-      transform: translate(-50%, 0);
     }
   }
-  @keyframes scroll-arrow {
+  @keyframes arrow-amnimation {
     0% {
       left: 50%;
       bottom: 7px;
-      transform: translate(-50%, 0);
     }
     50% {
       left: 50%;
       bottom: 3px;
-      transform: translate(-50%, 0);
     }
     100% {
       left: 50%;
       bottom: 7px;
-      transform: translate(-50%, 0);
     }
   }
 }
