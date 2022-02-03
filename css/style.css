@@ -627,29 +627,23 @@ body {
 }
 @-webkit-keyframes scroll-arrow {
   0% {
-    left: 0;
     bottom: 30px;
   }
   50% {
-    left: 0;
     bottom: 40px;
   }
   100% {
-    left: 0;
     bottom: 30px;
   }
 }
 @keyframes scroll-arrow {
   0% {
-    left: 0;
     bottom: 30px;
   }
   50% {
-    left: 0;
     bottom: 40px;
   }
   100% {
-    left: 0;
     bottom: 30px;
   }
 }
@@ -681,8 +675,8 @@ body {
 .member-animation {
   -webkit-animation-name: member-animation;
           animation-name: member-animation;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   -webkit-animation-iteration-count: 1;
@@ -715,8 +709,8 @@ body {
 .copy-animation {
   -webkit-animation-name: copy-animation;
           animation-name: copy-animation;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   -webkit-animation-iteration-count: 1;
