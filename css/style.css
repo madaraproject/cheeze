@@ -427,7 +427,7 @@ body.noscroll {
     transform: translateX(50%);
   }
   #main #fv::after {
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     width: 28px;
