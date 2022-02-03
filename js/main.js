@@ -1,5 +1,5 @@
 // グローバルメニュー関連
-$('.toggle-menu-btn').click(function(){
+$('.toggle-menu-btn, .header-navi-item').click(function(){
     $('.toggle-menu-btn, .header-navi').toggleClass('closed');
     $('body').toggleClass('noscroll');
 });
