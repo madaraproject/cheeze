@@ -567,7 +567,6 @@ body {
 #main #company .company-content {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
 }
 #main #company .company-content .g-map {
   width: 100%;
@@ -576,6 +575,7 @@ body {
 }
 #main #company .company-content .company-info {
   width: 400px;
+  margin-right: 60px;
 }
 #main #company .company-content .company-info .info-list {
   list-style: none;
@@ -583,10 +583,11 @@ body {
 @media (max-width: 1080px) {
   #main #company .company-content {
     flex-direction: column-reverse;
-    gap: 40px;
   }
   #main #company .company-content .company-info {
     width: 100%;
+    margin-top: 40px;
+    margin-right: 0;
   }
 }
 
