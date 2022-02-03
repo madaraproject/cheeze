@@ -627,46 +627,58 @@ body {
 }
 @-webkit-keyframes scroll-arrow {
   0% {
+    left: 40px;
     bottom: 30px;
   }
   50% {
+    left: 40px;
     bottom: 40px;
   }
   100% {
+    left: 40px;
     bottom: 30px;
   }
 }
 @keyframes scroll-arrow {
   0% {
+    left: 40px;
     bottom: 30px;
   }
   50% {
+    left: 40px;
     bottom: 40px;
   }
   100% {
+    left: 40px;
     bottom: 30px;
   }
 }
 @media (max-width: 1080px) {
   @-webkit-keyframes scroll-arrow {
     0% {
+      left: 50%;
       bottom: 7px;
     }
     50% {
+      left: 50%;
       bottom: 3px;
     }
     100% {
+      left: 50%;
       bottom: 7px;
     }
   }
   @keyframes scroll-arrow {
     0% {
+      left: 50%;
       bottom: 7px;
     }
     50% {
+      left: 50%;
       bottom: 3px;
     }
     100% {
+      left: 50%;
       bottom: 7px;
     }
   }
