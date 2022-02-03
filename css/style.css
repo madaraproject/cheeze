@@ -608,4 +608,196 @@ body {
   text-align: center;
   line-height: 1.5;
 }
+
+#fv::after {
+  -webkit-animation-name: scroll-arrow;
+          animation-name: scroll-arrow;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes scroll-arrow {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+@keyframes scroll-arrow {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+@media (max-width: 1080px) {
+  @-webkit-keyframes scroll-arrow {
+    0% {
+      bottom: 7px;
+    }
+    50% {
+      bottom: 3px;
+    }
+    100% {
+      bottom: 7px;
+    }
+  }
+  @keyframes scroll-arrow {
+    0% {
+      bottom: 7px;
+    }
+    50% {
+      bottom: 3px;
+    }
+    100% {
+      bottom: 7px;
+    }
+  }
+}
+
+.member-animation {
+  -webkit-animation-name: member-animation;
+          animation-name: member-animation;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes member-animation {
+  0% {
+    bottom: -350px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes member-animation {
+  0% {
+    bottom: -350px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.copy-animation {
+  -webkit-animation-name: copy-animation;
+          animation-name: copy-animation;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes copy-animation {
+  0% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1);
+  }
+  50% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1.05);
+  }
+  100% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1);
+  }
+}
+
+@keyframes copy-animation {
+  0% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1);
+  }
+  50% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1.05);
+  }
+  100% {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) scale(1);
+  }
+}
+@media (max-width: 1080px) {
+  @-webkit-keyframes copy-animation {
+    0% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1);
+    }
+    50% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1.1);
+    }
+    100% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1);
+    }
+  }
+  @keyframes copy-animation {
+    0% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1);
+    }
+    50% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1.1);
+    }
+    100% {
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%, 0) scale(1);
+    }
+  }
+}
 /*# sourceMappingURL=style.css.map */
