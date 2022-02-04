@@ -108,13 +108,15 @@ img {display: block;}
 }
 @include tab {
     .section-title-ja {
+        font-size: 14px;
         &::before {
-            width: 300px;
-            height: 124px;
+            top: -15px;
+            width: 270px;
+            height: 112px;
         }
     }
     .section-title-en {
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 .content-title {
@@ -349,9 +351,6 @@ body {
 }
 @include sp {
     #header {
-        position: fixed;
-        height: 80px;
-        background-color: rgba($c-white, 0.9);
         .header-title {
             left: 15px;
         }
@@ -410,18 +409,19 @@ body {
                 right: -140px;
             }
         }
-        &::after {
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            content: "";
-            display: inline-block;
-            width: 18px;
-            height: 140px;
-            background: url(../img/scroll-message-pc.svg) center center no-repeat;
-            background-size: contain;
-        }
     }
+    .arrow-pc {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        content: "";
+        display: block;
+        width: 18px;
+        height: 140px;
+        background: url(../img/scroll-message-pc.svg) center center no-repeat;
+        background-size: contain;
+    }
+    .arrow-sp {display: none;}
     @include tab {
         #fv {
             height: 667px;
@@ -455,14 +455,19 @@ body {
                     transform: translateX(50%);
                 }
             }
-            &::after {
-                bottom: 5px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 28px;
-                height: 21px;
-                background: url(../img/scroll-message-sp.svg) center center no-repeat;
-            }
+        }
+        .arrow-pc {display: none;}
+        .arrow-sp {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            display: block;
+            width: 28px;
+            height: 21px;
+            background: url(../img/scroll-message-sp.svg) center center no-repeat;
+            background-size: contain;
         }
     }
 
@@ -683,9 +688,42 @@ body {
 
 
 //--------------------------- アニメーション --------------------------- //
+.arrow-animation {
+    animation-name: arrow-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: normal;
+}
+@keyframes arrow-animation {
+    0% {
+        bottom: 40px;
+    }
+    50% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 40px;
+    }
+}
+@include tab {
+    @keyframes arrow-animation {
+        0% {
+            bottom: 7px;
+        }
+        50% {
+            bottom: 4px;
+        }
+        100% {
+            bottom: 7px;
+        }
+    }
+}
 .member-animation {
     animation-name: member-animation;
-    animation-fill-mode: none;
+    animation-fill-mode: forwards;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
@@ -699,7 +737,7 @@ body {
 
 .copy-animation {
     animation-name: copy-animation;
-    animation-fill-mode: none;
+    animation-fill-mode: forwards;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
