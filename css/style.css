@@ -369,7 +369,7 @@ body {
   line-height: 1.5;
   margin-top: 30px;
 }
-#main #fv .wrapper .fv-copy::before {
+#main #fv .wrapper .fv-copy::after {
   position: absolute;
   top: 45%;
   left: 48%;
@@ -403,12 +403,11 @@ body {
 }
 @media (max-width: 1080px) {
   #main #fv {
+    width: 100%;
     height: 667px;
   }
-  #main #fv .wrapper {
-    width: 100%;
-  }
   #main #fv .wrapper .fv-copy {
+    position: absolute;
     top: 160px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -421,13 +420,18 @@ body {
     text-align: center;
     font-size: 18px;
   }
-  #main #fv .wrapper .fv-copy::before {
+  #main #fv .wrapper .fv-copy::after {
     position: absolute;
     top: 45%;
     left: 48%;
     transform: translate(-50%, -50%);
     content: "";
     width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: url(../img/blob-01.svg) center center no-repeat;
+    background-size: contain;
+    z-index: -1;
   }
   #main #fv .wrapper .fv-member {
     position: absolute;
@@ -780,6 +784,23 @@ body {
   }
 }
 @media (max-width: 1080px) {
+  .copy-animation {
+    -webkit-animation-name: sp-copy-animation;
+            animation-name: sp-copy-animation;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+  }
+
   @-webkit-keyframes copy-animation {
     0% {
       top: 160px;
@@ -797,6 +818,7 @@ body {
       transform: translate(-50%, 0) scale(1);
     }
   }
+
   @keyframes copy-animation {
     0% {
       top: 160px;
