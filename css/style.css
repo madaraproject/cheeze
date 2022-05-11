@@ -1,0 +1,568 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap");
+/* ----------------------------------------------------
+======================== 変数 ==========================
+---------------------------------------------------- */
+/* ----------------------------------------------------
+====================== 共通クラス =======================
+---------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+.inB {
+  display: inline-block;
+}
+
+.pc {
+  display: none;
+}
+
+@media (min-width: 1001px) {
+  .pc {
+    display: block;
+  }
+}
+.sp {
+  display: block;
+}
+
+@media (min-width: 1001px) {
+  .sp {
+    display: none;
+  }
+}
+.inner {
+  max-width: 750px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1001px) {
+  .inner {
+    max-width: 1125px;
+  }
+}
+.head-01,
+.head-02 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 900;
+  color: #0095E0;
+  line-height: 1.5;
+}
+
+.head-03 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0095E0;
+  line-height: 1.5;
+}
+
+i.fa-external-link-alt {
+  margin-left: 5px;
+}
+i.fa-external-link-alt::after {
+  font-size: 15px;
+}
+
+.button {
+  box-shadow: 3px 3px 15px rgba(0, 149, 224, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+.online-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 335px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.7;
+  border-radius: 5px;
+  background-color: #0095E0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-link {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0095E0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.text-link:hover {
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------
+======================== Body =========================
+---------------------------------------------------- */
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.7;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px #eeeeee;
+  z-index: 10;
+}
+header .container {
+  width: 100%;
+  max-width: 1125px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .container .header-logo {
+  height: 20px;
+  z-index: 10;
+}
+header .container .header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: #0095E0;
+}
+
+main {
+  padding-top: 60px;
+}
+main #fv {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+main #fv .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main #fv .container .left-content .fv-list {
+  display: flex;
+  gap: 5px;
+}
+main #fv .container .left-content .fv-list .fv-list-item {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0095E0;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #DCEFFE;
+  padding: 7px 10px;
+}
+main #fv .container .left-content .head-01 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #fv .container .left-content p {
+  margin-bottom: 40px;
+}
+main #fv .container .right-content .fv-img {
+  width: 100%;
+}
+main #trouble .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main #trouble .container .head-02 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+main #trouble .container .trouble-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main #trouble .container .trouble-list .trouble-item {
+  width: 100%;
+  list-style: none;
+  border: 1px solid #DCEFFE;
+  padding: 20px 40px;
+}
+main #trouble .container .trouble-list .trouble-item .text-blue {
+  color: #0095E0;
+}
+main #online-01 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+main #online-01 .container .left-content .online-01-img {
+  width: 100%;
+  max-width: 502px;
+}
+main #online-01 .container .right-content .head-02 {
+  margin-bottom: 20px;
+}
+main #online-01 .container .right-content p {
+  margin-bottom: 40px;
+}
+main #service .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+main #service .container .head-02 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+main #service .container .service-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+main #service .container .service-list figure {
+  margin-bottom: 40px;
+}
+main #service .container .service-list figure img {
+  width: 100%;
+}
+main #service .container .service-list .head-03 {
+  margin-bottom: 5px;
+}
+main #online-02 {
+  z-index: 10;
+}
+main #online-02 .container .banner-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  border-top: 1px solid #DCEFFE;
+  border-bottom: 1px solid #DCEFFE;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+main #online-02 .container .banner-box .left-content .head-02 {
+  margin-bottom: 20px;
+}
+main #online-02 .container .banner-box .left-content p {
+  margin-bottom: 40px;
+}
+main #online-02 .container .banner-box .right-content .banner img {
+  width: 100%;
+  max-width: 335px;
+  border: 1px solid #eeeeee;
+}
+main #question .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main #question .container .head-02 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+main #question .container .question-list {
+  width: 100%;
+  max-width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #question .container .question-list .question-item {
+  list-style: none;
+  border-top: 1px solid #DCEFFE;
+  border-left: 1px solid #DCEFFE;
+  border-right: 1px solid #DCEFFE;
+}
+main #question .container .question-list .question-item:last-child {
+  border-bottom: 1px solid #DCEFFE;
+}
+main #question .container .question-list .question-item .item-link {
+  display: block;
+  text-decoration: none;
+  color: #555555;
+  padding: 20px;
+}
+main #question .container .question-list .question-item .item-link i {
+  color: #0095E0;
+}
+main #question .container .text-link {
+  width: 100%;
+  max-width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  margin-top: 20px;
+}
+main #online-03 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+main #online-03 .container .left-content .online-01-img {
+  width: 100%;
+  max-width: 652px;
+}
+main #online-03 .container .right-content .head-02 {
+  margin-bottom: 40px;
+}
+main #online-03 .container .right-content p {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #0095E0;
+  z-index: 10;
+}
+footer .footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer .footer-header .header-logo {
+  text-align: left;
+  height: 20px;
+  z-index: 10;
+}
+footer .footer-header .footer-navi .footer-navi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-header .footer-navi .footer-navi-list .footer-navi-item {
+  list-style: none;
+}
+footer .footer-header .footer-navi .footer-navi-list .footer-navi-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ffffff;
+}
+
+/* ----------------------------------------------------
+***************** ここから PC スタイル ******************
+---------------------------------------------------- */
+@media (min-width: 1001px) {
+  header .container {
+    max-width: 1125px;
+  }
+  header .container .header-button {
+    width: 225px;
+  }
+
+  main #fv .container {
+    flex-direction: row;
+    gap: 80px;
+  }
+  main #fv .container .left-content {
+    width: 334px;
+    min-width: 334px;
+  }
+  main #fv .container .left-content .fv-list .fv-list-item {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #0095E0;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #DCEFFE;
+    padding: 7px 10px;
+  }
+  main #fv .container .left-content .fv-list .fv-list-item + .fv-list-item {
+    margin-left: 5px;
+  }
+  main #trouble .container .head-02 {
+    text-align: center;
+  }
+  main #trouble .container .trouble-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px 40px;
+  }
+  main #trouble .container .trouble-list .trouble-item {
+    width: 334px;
+  }
+  main #online-01 {
+    background-color: #F7FBFF;
+  }
+  main #online-01 .container {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  main #online-01 .container .left-content {
+    width: 50%;
+  }
+  main #online-01 .container .left-content .online-01-img {
+    width: 100%;
+  }
+  main #online-01 .container .right-content {
+    width: 50%;
+    min-width: 503px;
+  }
+  main #service .container .head-02 {
+    text-align: center;
+  }
+  main #service .container .service-list {
+    flex-direction: row;
+    gap: 80px;
+  }
+  main #service .container .service-list figure {
+    margin-bottom: 40px;
+  }
+  main #service .container .service-list figure img {
+    width: 100%;
+  }
+  main #service .container .service-list .head-03 {
+    margin-bottom: 5px;
+  }
+  main #service .container .banner-box {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  main #service .container .banner-box .left-content .head-02 {
+    margin-bottom: 20px;
+  }
+  main #service .container .banner-box .left-content p {
+    margin-bottom: 40px;
+  }
+  main #service .container .banner-box .right-content .banner img {
+    width: 100%;
+    min-width: 335px;
+    border: 1px solid #eeeeee;
+  }
+  main #online-02 .container .banner-box {
+    align-items: flex-start;
+    flex-direction: row;
+    box-shadow: 3px 3px 15px rgba(0, 149, 224, 0.3);
+    border-radius: 40px;
+    box-shadow: 3px 3px 15px rgba(0, 149, 224, 0.3);
+    padding: 80px;
+  }
+  main #online-02 .container .banner-box .left-content .head-02 {
+    margin-bottom: 20px;
+  }
+  main #online-02 .container .banner-box .left-content p {
+    margin-bottom: 40px;
+  }
+  main #online-02 .container .banner-box .right-content {
+    box-shadow: none;
+  }
+  main #online-02 .container .banner-box .right-content .banner img {
+    width: 100%;
+    min-width: 335px;
+    border: 1px solid #eeeeee;
+  }
+  main #online-03 {
+    background-color: #F7FBFF;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  main #online-03 .container {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  main #online-03 .container .left-content {
+    position: relative;
+    width: 100%;
+  }
+  main #online-03 .container .left-content .online-01-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  main #online-03 .container .right-content {
+    max-width: 334px;
+    min-width: 334px;
+  }
+}
+@media (min-width: 1001px) {
+  footer .footer-header {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  footer .footer-header .footer-navi .footer-navi-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
