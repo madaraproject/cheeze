@@ -297,6 +297,9 @@ main #online-02 .container .banner-box .left-content .head-02 {
 main #online-02 .container .banner-box .left-content p {
   margin-bottom: 40px;
 }
+main #online-02 .container .banner-box .right-content {
+  box-shadow: none;
+}
 main #online-02 .container .banner-box .right-content .banner img {
   width: 100%;
   max-width: 335px;
@@ -325,6 +328,8 @@ main #question .container .question-list .question-item {
   border-top: 1px solid #DCEFFE;
   border-left: 1px solid #DCEFFE;
   border-right: 1px solid #DCEFFE;
+  background-color: #ffffff;
+  transition: background-color 0.2s;
 }
 main #question .container .question-list .question-item:last-child {
   border-bottom: 1px solid #DCEFFE;
@@ -337,6 +342,9 @@ main #question .container .question-list .question-item .item-link {
 }
 main #question .container .question-list .question-item .item-link i {
   color: #0095E0;
+}
+main #question .container .question-list .question-item:hover {
+  background-color: #DCEFFE;
 }
 main #question .container .text-link {
   width: 100%;
@@ -484,21 +492,6 @@ footer .copyright {
   main #service .container .service-list .head-03 {
     margin-bottom: 5px;
   }
-  main #service .container .banner-box {
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  main #service .container .banner-box .left-content .head-02 {
-    margin-bottom: 20px;
-  }
-  main #service .container .banner-box .left-content p {
-    margin-bottom: 40px;
-  }
-  main #service .container .banner-box .right-content .banner img {
-    width: 100%;
-    min-width: 335px;
-    border: 1px solid #eeeeee;
-  }
   main #online-02 .container .banner-box {
     align-items: flex-start;
     flex-direction: row;
@@ -512,9 +505,6 @@ footer .copyright {
   }
   main #online-02 .container .banner-box .left-content p {
     margin-bottom: 40px;
-  }
-  main #online-02 .container .banner-box .right-content {
-    box-shadow: none;
   }
   main #online-02 .container .banner-box .right-content .banner img {
     width: 100%;

@@ -304,6 +304,7 @@ main {
                     p {margin-bottom: 40px;}
                 }
                 .right-content {
+                    box-shadow: none;
                     .banner {
                         img {
                             width: 100%;
@@ -337,6 +338,8 @@ main {
                     border-top: 1px solid $c-light-blue;
                     border-left: 1px solid $c-light-blue;
                     border-right: 1px solid $c-light-blue;
+                    background-color: $c-white;
+                    transition: background-color 0.2s;
                     &:last-child {border-bottom: 1px solid $c-light-blue;}
                     .item-link {
                         display: block;
@@ -345,6 +348,7 @@ main {
                         padding: 20px;
                         i {color: $c-blue;}
                     }
+                    &:hover {background-color: $c-light-blue;}
                 }
             }
             .text-link {
@@ -510,23 +514,6 @@ footer {
                     }
                     .head-03 {margin-bottom: 5px;}
                 }
-                .banner-box {
-                    align-items: flex-start;
-                    flex-direction: row;
-                    .left-content {
-                        .head-02 {margin-bottom: 20px;}
-                        p {margin-bottom: 40px;}
-                    }
-                    .right-content {
-                        .banner {
-                            img {
-                                width: 100%;
-                                min-width: 335px;
-                                border: 1px solid $c-gray;
-                            }
-                        }
-                    }
-                }
             }
         }
         // ---------- （PC）online-02 ---------- //
@@ -544,7 +531,6 @@ footer {
                         p {margin-bottom: 40px;}
                     }
                     .right-content {
-                        box-shadow: none;
                         .banner {
                             img {
                                 width: 100%;
